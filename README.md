@@ -66,8 +66,6 @@ Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis d
 
 ---
 
----
-
 ## 📎 Author
 
 **Nama**: Muhammad Fikri
