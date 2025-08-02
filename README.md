@@ -77,3 +77,5 @@ Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis d
 **Fokus**: Membuat model machine learning yang lebih baik, evaluasi model, dan pengembangan portofolio machine learning
 
 ---
+## 🗒️ Catatan
+project ini mungkin belum begitu sempurna, namun saya akan selau tetap belajar dengan giat kedepannya untuk memangun model yang lebih baik dan andal
