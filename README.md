@@ -62,7 +62,6 @@ Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis d
 - Classification Report
 - Learning Curve
 - ROC & AUC
-- Feature Importance: SHAP / Permutation (opsional)
 
 ---
 
