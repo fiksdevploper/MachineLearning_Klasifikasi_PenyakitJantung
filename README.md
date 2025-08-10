@@ -1,5 +1,8 @@
 # ❤️ Heart Disease Classification with Random Forest
 
+## 👌 Project Description
+Proyek ini merupakan implementasi end-to-end dari sistem klasifikasi penyakit jantung berbasis machine learning, dengan fokus pada akurasi, generalisasi, dan kesiapan untuk deployment. Menggunakan algoritma Random Forest, model ini dirancang untuk mengidentifikasi risiko penyakit jantung berdasarkan data klinis pasien, seperti tekanan darah, kadar kolesterol, dan gejala angina.
+
 ## 📌 Problem Statement
 Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis dini dan akurat sangat krusial untuk mencegah komplikasi serius. Proyek ini bertujuan untuk membangun model klasifikasi menggunakan algoritma Random Forest yang mampu memprediksi risiko penyakit jantung berdasarkan data klinis.
 
