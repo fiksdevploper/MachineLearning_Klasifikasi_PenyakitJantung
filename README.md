@@ -71,7 +71,7 @@ Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis d
 ## 📎 Author
 
 **Nama**: Muhammad Fikri
-**Role**: Data Scientist  
-**Fokus**: API deployment, model evaluation, machine learning portfolio projects
+**Role**: Data Scientist 
+**Fokus**: model evaluation, machine learning portfolio projects
 
 ---
