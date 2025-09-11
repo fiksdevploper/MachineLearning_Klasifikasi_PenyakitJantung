@@ -1,5 +1,8 @@
 # ❤️ Heart Disease Classification with Random Forest
 
+## 👌 Project Description
+Proyek ini merupakan implementasi end-to-end dari sistem klasifikasi penyakit jantung berbasis machine learning, dengan fokus pada akurasi, generalisasi, dan kesiapan untuk deployment. Menggunakan algoritma Random Forest, model ini dirancang untuk mengidentifikasi risiko penyakit jantung berdasarkan data klinis pasien, seperti tekanan darah, kadar kolesterol, dan gejala angina.
+
 ## 📌 Problem Statement
 Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis dini dan akurat sangat krusial untuk mencegah komplikasi serius. Proyek ini bertujuan untuk membangun model klasifikasi menggunakan algoritma Random Forest yang mampu memprediksi risiko penyakit jantung berdasarkan data klinis.
 
@@ -10,33 +13,41 @@ Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis d
 - **Sumber**: [Heart Disease Dataset by mexwell (Kaggle)](https://www.kaggle.com/datasets/mexwell/heart-disease-dataset)
 - **Jumlah Data**: 918 observasi
 - **Target**: 
-  - `0` → Tidak berisiko
-  - `1` → Berisiko penyakit jantung
-- **Fitur penting**:
-  - `Age`, `RestingBP`, `Cholesterol`, `FastingBS`, `MaxHR`, `ExerciseAngina`, `ST_Slope`
-- **Catatan khusus**:
-  - Beberapa fitur memiliki missing values dan perlu preprocessing
-  - Data bersifat tabular dan dapat langsung digunakan untuk supervised learning
+  - `0` → Normal
+  - `1` → Mengidap penyakit jantung
+
+### 🧬 Fitur dan Penjelasan
+
+| Fitur | Kode | Tipe | Deskripsi |
+|------|------|------|-----------|
+| Age | `age` | Numerik | Usia pasien dalam tahun |
+| Sex | `sex` | Binary | `1`: Pria, `0`: Wanita |
+| Chest Pain Type | `chest pain type` | Nominal | `1`: Typical angina, `2`: Atypical angina, `3`: Non-anginal pain, `4`: Asymptomatic |
+| Resting BP | `resting bp s` | Numerik | Tekanan darah istirahat (mm Hg) |
+| Cholesterol | `cholesterol` | Numerik | Kadar kolesterol (mg/dl) |
+| Fasting Blood Sugar | `fasting blood sugar` | Binary | `1`: >120 mg/dl, `0`: <=120 mg/dl |
+| Resting ECG | `resting ecg` | Nominal | `0`: Normal, `1`: ST-T abnormality, `2`: LV hypertrophy |
+| Max Heart Rate | `max heart rate` | Numerik | Denyut jantung maksimal |
+| Exercise Angina | `exercise angina` | Binary | `1`: Ya, `0`: Tidak |
+| ST Depression | `oldpeak` | Numerik | Penurunan ST saat latihan |
+| ST Slope | `ST slope` | Nominal | `1`: Upsloping, `2`: Flat, `3`: Downsloping |
 
 ---
 
 ## ⚙️ Model Pipeline
 
 - **Preprocessing**:
-  - Penanganan missing values dan fitur numerik
-  - Encoding fitur kategorik
-  - Scaling dengan `StandardScaler`
-  - Pipeline menggunakan `scikit-learn`
+  - Penanganan missing values
+  - Encoding fitur kategorikal
+  - Scaling numerik (`StandardScaler`)
+  - Pipeline dengan `scikit-learn`
 
-- **Model**: 
-  - `RandomForestClassifier` dengan hyperparameter tuning:
-    - `n_estimators`
-    - `max_depth`
-    - `min_samples_split`
-    - `max_features`
+- **Model**:
+  - `RandomForestClassifier`
+  - Tuning: `n_estimators`, `max_depth`, `min_samples_split`, `max_features`
 
-- **Saving Model**:
-  - Model disimpan dalam format `.pkl` dengan `joblib`
+- **Model Saving**:
+  - Model disimpan sebagai `.pkl` menggunakan `joblib`
 
 ---
 
@@ -51,29 +62,15 @@ Penyakit jantung merupakan penyebab kematian utama di seluruh dunia. Diagnosis d
 
 ### 🧪 Evaluasi Tambahan
 - Confusion Matrix
-- Classification Report: Precision, Recall, F1-score
+- Classification Report
 - Learning Curve
-- Feature Importance: SHAP / Permutation (optional)
-- ROC Curve & AUC
-
----
-
-
----
-
-## 🧠 Insight & Recommendation
-
-- Random Forest menunjukkan performa tinggi dan stabil
-- Pipeline membuat proses prediksi lebih konsisten
-- Model layak dipertimbangkan untuk implementasi sistem deteksi dini penyakit jantung
-- Logging dan monitoring dapat ditambahkan untuk keperluan produksi
+- ROC & AUC
 
 ---
 
 ## 📎 Author
-
-**Nama**: Muhammad Fikri
-**Role**: Data Scientist in Progress  
-**Fokus**: Membuat model machine learning yang lebih baik, evaluasi model, dan pengembangan portofolio machine learning
+- **Nama**: Muhammad Fikri
+- **Role**: Data Scientist 
+- **Fokus**: model evaluation, machine learning portfolio projects
 
 ---
